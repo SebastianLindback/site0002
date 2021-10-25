@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site</title>
 
-    <!-- semantic CSS -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/master.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site</title>
 
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
-    <!-- semantic JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="semantic/dist/semantic.min.js"></script>
+  <!-- semantic CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/master.css">
 
-  </head>
-  <body>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+  <!-- semantic JS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
   <div class="wrapper">
     <div class="main">
       <div class="grid-container">
@@ -34,65 +33,103 @@
 
 
             <div class="wHeader">
-              <h1>AGILA METODER</h1>
+              <h1>
+Agila utvecklingsmetoder och html</h1>
             </div>
 
             <div class="menu">
               <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="multiple: true">
-                  <!--<li class="uk-active"><a href="#">Active</a></li>-->
-                  <li class="uk-parent">
-                      <a href="#">Klienttekniker</a>
-                      <ul class="uk-nav-sub">
-                          <li><a href="#">HTML</a></li>
-                          <li><a href="#">CSS</a></li>
-                          <li><a href="#">JavaScript</a></li>
-                      </ul>
-                  </li>
-                  <li class="uk-parent">
-                      <a href="#">Projektmetodik</a>
-                      <ul class="uk-nav-sub">
-                          <li><a href="#">Vattenfallsmetodik</a></li>
-                          <li><a href="#">Agil utveckling </a></li>
-                          <li><a href="#">Hur man arbetar i Scrum. </a></li>
-                      </ul>
-                  </li>
-                  <li class="uk-parent">
-                      <a href="#">Internet</a>
-                      <ul class="uk-nav-sub">
-                          <li><a href="#">Klient-server-modellen </a></li>
-                          <li><a href="#">Internetkommunikation </a></li>
-                          <li><a href="#">Protokoll </a></li>
-                          <li><a href="#">http / https </a></li>
-                          <li><a href="#">ftp / ftps  </a></li>
+                <li class="uk-parent uk-open">
+                  <a href="#">KLIENTTEKNIKER</a>
+                  <ul class="uk-nav-sub">
+                    <li class="uk-active"><a onclick="contentSwitch(1);">HTML</a></li>
+                    <li><a onclick="contentSwitch(2);">CSS</a></li>
+                    <li><a onclick="contentSwitch(3);">JavaScript</a></li>
+                  </ul>
+                </li>
+                <li class="uk-parent uk-open">
+                  <a href="#">PROJEKTMETODIK</a>
+                  <ul class="uk-nav-sub">
+                    <li><a onclick="contentSwitch(4);">Vattenfallsmetodik</a></li>
+                    <li><a onclick="contentSwitch(5);">Agil utveckling </a></li>
+                    <li><a onclick="contentSwitch(6);">Hur man arbetar i Scrum. </a></li>
+                  </ul>
+                </li>
+                <li class="uk-parent uk-open">
+                  <a href="#">INTERNET</a>
+                  <ul class="uk-nav-sub">
+                    <li><a onclick="contentSwitch(7);">Klient-server-modellen </a></li>
+                    <li><a onclick="contentSwitch(8);">Internetkommunikation </a></li>
+                    <li><a onclick="contentSwitch(9);">Protokoll </a></li>
+                    <li><a onclick="contentSwitch(10);">http / https </a></li>
+                    <li><a onclick="contentSwitch(11);">ftp / ftps </a></li>
 
-                      </ul>
-                  </li>
+                  </ul>
+                </li>
               </ul>
+            </div>
+
+
+
+          </div>
+        </div>
+        <div class="grid-item content">
+          <div class="contHead">
+            <h2 class="dis 13">Klienttekniker</h2>
+            <h2 class="dis 1">HTML</h2>
+            <h2 class="dis 2">CSS</h2>
+            <h2 class="dis 3">JavaScript</h2>
+            <h2 class="dis 56">Projektmetodik</h2>
+            <h2 class="dis 4">Vattenfallsmetodik</h2>
+            <h2 class="dis 5">Agil utveckling</h2>
+            <h2 class="dis 6">Hur man arbetar i Scrum.</h2>
+            <h2 class="dis 7">Klient-server-modellen</h2>
+            <h2 class="dis 8">Internetkommunikation</h2>
+            <h2 class="dis 9">Protokoll</h2>
+            <h2 class="dis 10">http / https</h2>
+            <h2 class="dis 11">ftp / ftps</h2>
           </div>
 
-
-            <div class="ui centered card">
-
-              <div class="image">
-                <img src="media/kristy.png" id="prof">
-              </div>
-              <div class="content">
-                <a class="header">Elyse</a>
-              </div>
+          <div class="contText">
+            <div class="dis 1">
+              <p>HTML</p>
+            </div>
+            <div class="dis 2">
+              <p>CSS</p>
+            </div>
+            <div class="dis 3">
+              <p>JavaScript</p>
+            </div>
+            <div class="dis 4">
+              <p>Vattenfallsmetodik</p>
+            </div>
+            <div class="dis 5">
+              <p>Agil utveckling</p>
+            </div>
+            <div class="dis 6">
+              <p>Hur man arbetar i Scrum.</p>
+            </div>
+            <div class="dis 7">
+              <p>Klient-server-modellen</p>
+            </div>
+            <div class="dis 8">
+              <p>Internetkommunikation</p>
+            </div>
+            <div class="dis 9">
+              <p>Protokoll</p>
+            </div>
+            <div class="dis 10">
+              <p>http / https</p>
+            </div>
+            <div class="dis 11">
+              <p>ftp / ftps</p>
             </div>
           </div>
         </div>
-        <div class="grid-item">
-          <h2>Scrum</h2>
-
-        </div>
-
-
       </div>
-
-
     </div>
-
   </div>
-  </body>
+  <script src="scripts/main.js" charset="utf-8"></script>
+</body>
+
 </html>
