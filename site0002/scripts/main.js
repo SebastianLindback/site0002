@@ -5,9 +5,11 @@ function contentSwitch(y) {
   for (var i = 0; i < content.length; i++) {
     if (content[i].classList.contains(y)){
     content[i].style.display = "block";
+
     }
     else {
       content[i].style.display = "none";
+
     }
   }
 }
